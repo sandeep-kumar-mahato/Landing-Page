@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/e0ada558cb.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="#product">Product</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <div class="content">
+            <p>Exclusive Offer - 50% Off This Week</p>
+            <h1>Blancpain Villeret</h1>
+            <p>"Timeless Elegance: Discover Your Perfect Watch"</p>
+            <p>Starting at <strong>$1620.99</strong></p>
+            <button type="submit">Shop Now</button>
+        </div>
+        <div>
+            <img class="content-image" src="images/6.jpg" alt="watch">
+        </div>
+    </section>
+
+    <div class="section-2">
+        <div>
+            <i class="fas fa-truck"></i>
+            <h3>Free Shipping</h3>
+            <p>Free Shipping on all Order</p>
+        </div>
+        <div>
+            <i class="fas fa-truck"></i>
+            <h3>Free Shipping</h3>
+            <p>Free Shipping on all Order</p>
+        </div>
+        <div>
+            <i class="fas fa-truck"></i>
+            <h3>Free Shipping</h3>
+            <p>Free Shipping on all Order</p>
+        </div>
+        <div>
+            <i class="fas fa-truck"></i>
+            <h3>Free Shipping</h3>
+            <p>Free Shipping on all Order</p>
+        </div>
+    </div>
+
+    <div id="product" class="product">
+        <h1>Featured Products</h1>
+        <div class="cards">
+            <div class="card">
+                <div class="card-images">
+                    <img class="default-image" src="images/p-11.png" alt="Default Image">
+                    <img class="hover-image" src="images/p-1.png" alt="Hover Image">
+                </div>
+                <div class="card-content">
+                    <p>Dress Watches</p>
+                    <p>$40.00</p>
+                </div>
+            </div>
+            <!-- Add more card elements here -->
+        </div>
+    </div>
+
+    <script>
+        window.addEventListener("scroll", function () {
+            let nav = document.querySelector("nav");
+            nav.classList.toggle("sticky", window.scrollY > 0);
+        });
+    </script>
+</body>
+
+</html>

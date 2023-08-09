@@ -5,13 +5,17 @@
     outline: none;
 }
 
+body {
+    background-color: rgb(36, 35, 35);
+    color: #fff;
+}
+
 nav {
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: rgb(36, 35, 35);
-    color: #fff;
     padding: 16px;
     transition: 0.6s;
     position: fixed;
@@ -22,7 +26,7 @@ nav {
 
 nav.sticky {
     padding: 12px 100px;
-    background: #bf742f;
+    background: crimson;
 }
 
 nav ul {
@@ -63,7 +67,6 @@ section {
     align-items: center;
     justify-content: space-around;
     background-color: rgba(20, 21, 16, 255);
-    color: #fff;
     padding: 4rem;
 }
 
@@ -72,7 +75,7 @@ section {
 }
 
 .content p:first-child {
-    color: #bf742f;
+    color: crimson;
 }
 
 .content p {
@@ -86,7 +89,7 @@ section {
 }
 
 strong {
-    color: #bf742f;
+    color: crimson;
     font-size: 1.6rem;
 }
 
@@ -94,9 +97,9 @@ button {
     padding: 2% 6%;
     margin: 3rem 0;
     background: transparent;
-    color: #bf742f;
+    color: crimson;
     font-size: 1.2rem;
-    border: 2px solid #bf742f;
+    border: 2px solid crimson;
     text-transform: uppercase;
 }
 
@@ -115,21 +118,18 @@ button {
 }
 
 .fas {
-    border: 2px solid #bf742f;
+    border: 2px solid crimson;
     border-radius: 50%;
     padding: 1rem;
     margin: 0 0 1rem;
-    color: #bf742f;
+    color: crimson;
 }
 
 .section-2 p {
-    color: rgb(168, 153, 153);
+    color: rgb(248, 137, 137, 0.6);
 }
 
 .product {
-    height: 100vh;
-    background-color: rgba(20, 21, 16, 255);
-    color: #fff;
     padding: 4rem;
 }
 
@@ -138,20 +138,21 @@ h1 {
 }
 
 .cards {
-    width: 80%;
+    width: 90%;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
+    padding: 16px 64px;
 }
 
 .card {
     position: relative;
     width: 200px;
-    height: 300px;
     overflow: hidden;
-    border: 2px solid #bf742f;
+    /*border: 2px solid crimson; */
+    margin: 16px 16px 16px 0;
 }
 
 .card-images {
@@ -160,21 +161,18 @@ h1 {
     overflow: hidden;
 }
 
-.card img {
-    width: 10rem;
-    height: 10rem;
-    border-radius: 50%;
-    margin: 1rem;
-}
-
 .card p {
-    padding: 2px;
+    padding: 6px;
     text-align: center;
 }
 
 .card-images img {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    margin: 1rem;
     object-fit: cover;
-    transition: opacity 0.3s ease;
+    transition: opacity 0.9s ease;
 }
 
 .card-images .hover-image {
@@ -191,4 +189,94 @@ h1 {
 
 .card-images:hover .hover-image {
     opacity: 1;
+}
+
+/* Sale */
+.sale {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: #fff;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 255);
+}
+
+.sale-img {
+    width: 20%;
+}
+
+/* ----------Blog---------- */
+.blogs {
+    padding: 2% 0;
+}
+
+.blogs h2 {
+    color: rgb(248, 137, 137, 0.6);
+}
+
+.blog {
+    width: 90%;
+    margin: 2% auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    padding: 2rem;
+    text-align: justify;
+}
+
+.blog-1 {
+    margin: 0 24px;
+}
+
+.blog-1 p {
+    font-size: 1rem;
+    padding: 16px 0;
+    color: #fff;
+}
+
+.blog-1 p:last-child {
+    color: #fff;
+    font-size: 1rem;
+    padding: 0 0 16px;
+}
+
+.blog-1 h1 {
+    font-size: 1.5rem;
+    text-align: left;
+    padding: 0 0 16px;
+}
+
+hr {
+    width: 90%;
+    margin: auto;
+    background-color: crimson;
+    height: 1px;
+    border: none;
+}
+
+/* ----------Footer---------- */
+
+.sec-1 h3 {
+    padding-bottom: 2rem;
+}
+
+.sec-1 a,
+p {
+    line-height: 1.7rem;
+    font-size: 1.2rem;
+    letter-spacing: 1.1px;
+    color: rgb(168, 153, 153);
+    text-decoration: none;
+}
+
+.creator {
+    background-color: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    padding: 16px;
+}
+
+.creator p,
+strong {
+    font-size: 1rem;
 }

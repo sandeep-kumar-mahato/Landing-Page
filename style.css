@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,900;1,900&family=Noto+Serif:wght@200;400;900&display=swap');
+
+/* font-family: 'Merriweather', serif;
+font-family: 'Noto Serif', serif; */
 * {
     padding: 0;
     margin: 0;
@@ -17,6 +21,7 @@ nav {
     align-items: center;
     background-color: rgb(36, 35, 35);
     padding: 16px;
+    font-family: 'Noto Serif', serif;
     transition: 0.6s;
     position: fixed;
     top: 0;
@@ -210,8 +215,8 @@ h1 {
     padding: 2% 0;
 }
 
-.blogs h2 {
-    color: rgb(248, 137, 137, 0.6);
+.blogs h1 {
+    font-family: 'Noto Serif', serif;
 }
 
 .blog {
@@ -233,6 +238,7 @@ h1 {
     font-size: 1rem;
     padding: 16px 0;
     color: #fff;
+    font-family: 'Noto Serif', serif;
 }
 
 .blog-1 p:last-child {
@@ -241,10 +247,12 @@ h1 {
     padding: 0 0 16px;
 }
 
-.blog-1 h1 {
-    font-size: 1.5rem;
+.blog-1 h2 {
+    font-size: 1.2rem;
     text-align: left;
-    padding: 0 0 16px;
+    color: rgb(248, 137, 137, 0.6);
+    letter-spacing: 1px;
+    font-family: 'Merriweather', serif;
 }
 
 hr {
@@ -258,16 +266,19 @@ hr {
 /* ----------Footer---------- */
 
 .sec-1 h3 {
-    padding-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    letter-spacing: 2px;
+    font-family: 'Merriweather', serif;
 }
 
 .sec-1 a,
 p {
     line-height: 1.7rem;
-    font-size: 1.2rem;
+    font-size: 1rem;
     letter-spacing: 1.1px;
     color: rgb(168, 153, 153);
     text-decoration: none;
+    font-family: 'Noto Serif', serif;
 }
 
 .creator {
